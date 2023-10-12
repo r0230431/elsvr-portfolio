@@ -1,0 +1,51 @@
+/*Huisstijl formatting*/
+body {
+    background-color: #DBDFEA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/*Navigatiebalk*/
+.ul-nav {
+    list-style-type: none;
+    background-color:#141E46;
+    border-radius: 15px;
+    margin: 0px 0px 75px 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.li-nav {
+    float: left
+}
+
+.li-nav a {
+    display: block;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.li-nav a:hover {
+    background-color: #DBDFEA;
+    color:#141E46;
+}
+
+.index-icon {
+    color:#EB5350;
+}
+
+/*Algemene styling*/
+.container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer, div.row {
+    clear:both;
+}
