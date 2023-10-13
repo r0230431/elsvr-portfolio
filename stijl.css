@@ -130,6 +130,7 @@ h1.cv {
 
 img.cv {
     margin: 40px;
+    border-radius: 20px;
 }
 
 table.cv {
@@ -191,6 +192,7 @@ div.ervaring {
 
 img.ervaring {
     margin: 0px 20px;
+    border-radius: 20px;
 }
 
 h1.ervaring {
@@ -219,7 +221,7 @@ figure.hobby-portret {
 }
 
 img.hobby-portret {
-    width: 350px;
+    border-radius: 30px;
     margin-left: 20px;
     margin-top: 0px;
 }
@@ -263,6 +265,7 @@ table.hobby th {
 
 table.hobby td img {
     width: 150px;
+    border-radius: 10px;
 }
 
 table.hobby td {
