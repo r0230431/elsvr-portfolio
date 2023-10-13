@@ -46,8 +46,237 @@ li.nav a:hover {
     margin-left: auto;
 }
 
+.floatleft {
+    float: left;
+}
 
+.floatright {
+    float: right;
+}
 
 footer, div.row {
     clear:both;
+}
+
+/*Homepage formatting*/
+#nav-index {
+    background-color:#EB5350;
+    color:#141E46;            
+}
+
+h1.index {
+    color: #EB5350;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0px 0px 0px 50px;
+}
+
+img.index-portret {
+    float: right;
+    border-radius: 30px;
+    margin: 0px 50px 0px 0px;
+}
+
+p.index-line {
+    font-size:x-large;
+    font-style: italic;
+    text-align:end;
+    width: 52%;
+    margin: 30px 0px 10px 50px;
+}
+
+div.index-text {
+    font-size: medium;
+    width: 52%;
+    margin: 50px 0px 50px 50px;
+    text-align: justify;
+}
+
+p.index a:link {
+    text-decoration: none;
+    font-weight: bolder;
+    color:darkblue;
+}
+
+p.index a:visited {
+    color:#141E46;
+}
+
+p.index a:hover {
+    color:#EB5350;
+}
+
+/*Webpage CV formatting*/
+#nav-cv {
+    background-color:#EB5350;
+    color:#141E46;            
+}
+
+h1.cv {
+    background-color: #EB5350;
+    color: #FFFFFF;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 15px 0px;
+}
+
+.cv-icon {
+    color:#141E46;
+}
+
+img.cv {
+    margin: 40px;
+}
+
+table.cv {
+    border-collapse: collapse;
+    border: none;
+    margin: 40px;
+}
+
+td.cv-left {
+    font-weight:900;
+    text-align: left;
+    vertical-align: top;
+    padding-right: 20px;
+    border-right: 0.5px solid #141E46;
+}
+
+td.cv-right {
+    font-weight: 900;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+td.cv-italic {
+    font-style: italic;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+table.cv td a:link {
+    text-decoration: none;
+    color:#141E46;
+}
+
+table.cv td a:hover {
+    color:#EB5350;
+}
+
+ul.cv {
+    list-style-type: none;
+    margin: 40px;
+    margin-left: 570px;
+    padding: 20px;
+}
+
+ul.cv li {
+    padding: 3px 0px;
+}
+
+/*Webpage Ervaring formatting*/
+#nav-ervaring {
+    background-color:#EB5350;
+    color:#141E46;            
+}
+
+div.ervaring {
+    margin-bottom: 70px;
+}
+
+img.ervaring {
+    margin: 0px 20px;
+}
+
+h1.ervaring {
+    color:#EB5350;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0px 0px 30px 20px;
+}
+
+div.float-style p {
+    font-size: medium;
+    text-align: justify;
+    margin-right: 40px;
+}
+
+/*Webpage Hobby formatting*/
+#nav-hobby {
+    background-color:#EB5350;
+    color:#141E46;            
+}
+
+figure.hobby-portret {
+    margin-left: 0;
+    margin-top: 0px;
+}
+
+img.hobby-portret {
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+figcaption.hobby-portret {
+    color:#141E46;
+    text-align: center;
+    font-size: x-small;
+}
+
+h1.hobby {
+    color: #EB5350;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: right;
+    margin: 0px 20px 20px 0px;
+}
+
+table.hobby {
+    border-collapse: collapse;
+    /*border: 3px solid #141E46;*/
+    margin-right: 20px;
+    width: 750px;
+}
+
+table.hobby caption {
+    caption-side: bottom;
+    font-size: small;
+    margin-top: 5px;
+}
+
+table.hobby th {
+    /*background:#141E46;
+    color:#DBDFEA;*/
+    color:#141E46;
+    font-weight: bold;
+    font-size:16pt;
+    padding:10px;
+}
+
+table.hobby td img {
+    width: 150px;
+}
+
+table.hobby td {
+    padding: 10px;
+}
+
+table.hobby td, table.hobby th {
+    border-bottom: 1px dotted #141E46;
+}
+
+table.hobby tr.lastrow td, table.hobby tr.lastrow th {
+    border-bottom: none;
+}
+
+q.hobby {
+    font-style: italic;
 }
