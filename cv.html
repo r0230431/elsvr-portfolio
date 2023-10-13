@@ -21,7 +21,7 @@
             color:#141E46;            
         }
 
-        h1.cv-style {
+        h1.cv {
             background-color: #EB5350;
             color: #FFFFFF;
             font-size: x-large;
@@ -35,29 +35,32 @@
         .cv-icon {
             color:#141E46;
         }
-        img.cv-style {
+        img.cv {
             margin: 40px;
         }
 
+        /*Aan te passen?*/
         div.img-right {
             float: right;
         }
 
-        .cv-table {
+        table.cv {
             border-collapse: collapse;
             border: none;
             margin: 40px;
         }
 
+        /*Algemeen?*/
         .floatleft {
             float: left;
         }
 
+        /*Algemeen?*/
         .floatright {
             float: right;
         }
 
-        td.left {
+        td.cv-left {
             font-weight:900;
             text-align: left;
             vertical-align: top;
@@ -65,13 +68,13 @@
             border-right: 0.5px solid #141E46;
         }
 
-        td.right {
+        td.cv-right {
             font-weight: 900;
             vertical-align: top;
             padding-left: 20px;
         }
 
-        td.italic {
+        td.cv-italic {
             font-style: italic;
             vertical-align: top;
             padding-left: 20px;
@@ -87,14 +90,14 @@
             color:#EB5350;
         }
         
-        .ul-full {
+        ul.cv {
             list-style-type: none;
             margin: 40px;
             margin-left: 570px;
             padding: 20px;
         }
 
-        .ul-full li {
+        ul.cv li {
             padding: 3px 0px;
         }
     </style>
@@ -102,111 +105,111 @@
 
 <body>
     <div class="container">
-        <ul class="ul-nav">
-            <li class="li-nav"><a href="index.html"><i class="fa-solid fa-house index-icon"></i>&nbsp;&nbsp;Home</a></li>
-            <li class="li-nav"><a href="cv.html" id="nav-cv">Curriculum Vitae</a></li>
-            <li class="li-nav"><a href="ervaring.html">Ervaring</a></li>
-            <li class="li-nav"><a href="hobby.html">Hobby</a></li>
-            <li class="li-nav"><a href="contact.html">Contact</a></li>
+        <ul class="nav">
+            <li class="nav"><a href="index.html"><i class="fa-solid fa-house home-icon"></i>&nbsp;&nbsp;Home</a></li>
+            <li class="nav"><a href="cv.html" id="nav-cv">Curriculum Vitae</a></li>
+            <li class="nav"><a href="ervaring.html">Ervaring</a></li>
+            <li class="nav"><a href="hobby.html">Hobby</a></li>
+            <li class="nav"><a href="contact.html">Contact</a></li>
         </ul>
 
         <!--Werkervaring-->
-        <h1 class="cv-style"><i class="fa-solid fa-briefcase cv-icon"></i>&nbsp;Werkervaring</h1>
+        <h1 class="cv"><i class="fa-solid fa-briefcase cv-icon"></i>&nbsp;Werkervaring</h1>
 
-        <table class="cv-table floatleft">
+        <table class="cv floatleft">
             <tr>
-                <td rowspan="2" class="left">2021 - ...</td>
-                <td class="right">
+                <td rowspan="2" class="cv-left">2021 - ...</td>
+                <td class="cv-right">
                     <a href="https://vatsquare.com/" target="_blank">Vatsquare</a> /
                     <a href="https://www.btw-lijn.be/" target="_blank">De Btw-lijn</a>
                 </td>
             </tr>
 
             <tr>
-                <td class="italic">BTW-expert</td>
+                <td class="cv-italic">BTW-expert</td>
             </tr>
 
             <tr>
-                <td rowspan="2" class="left">2017 - 2021</td>
-                <td class="right">
+                <td rowspan="2" class="cv-left">2017 - 2021</td>
+                <td class="cv-right">
                     <a href="https://www2.deloitte.com/be/en.html" target="_blank">Deloitte Tax & Legal</a>
                 </td>
             </tr>
 
             <tr>
-                <td class="italic">Senior Manager - VAT compliance & consulting</td>
+                <td class="cv-italic">Senior Manager - VAT compliance & consulting</td>
             </tr>
 
             <tr>
-                <td rowspan="2" class="left">2016 - 2017</td>
-                <td class="right">
+                <td rowspan="2" class="cv-left">2016 - 2017</td>
+                <td class="cv-right">
                     <a href="https://www.moore.be/nl" target="_blank">Moore Finance & Tax</a>
                 </td>
             </tr>
 
             <tr>
-                <td class="italic">Manager Tax & Legal</td>
+                <td class="cv-italic">Manager Tax & Legal</td>
             </tr>
 
             <tr>
-                <td rowspan="2" class="left">2015 - 2016</td>
-                <td class="right">
+                <td rowspan="2" class="cv-left">2015 - 2016</td>
+                <td class="cv-right">
                     <a href="https://hlb.be/nl/" target="_blank">HLB Belgium</a>
                 </td>
             </tr>
 
             <tr>
-                <td class="italic">Senior Tax Consultant</td>
+                <td class="cv-italic">Senior Tax Consultant</td>
             </tr>
 
             <tr>
-                <td rowspan="2" class="left">2010 - 2015</td>
-                <td class="right">
+                <td rowspan="2" class="cv-left">2010 - 2015</td>
+                <td class="cv-right">
                     <a href="https://www2.deloitte.com/be/en.html" target="_blank">Deloitte Tax & Legal</a>
                 </td>
             </tr>
 
             <tr>
-                <td class="italic">Senior Consultant - VAT compliance & consulting</td>
+                <td class="cv-italic">Senior Consultant - VAT compliance & consulting</td>
             </tr>
         </table>
 
-        <img src="./images/cv_afbeelding1.jpg" alt="Afbeelding laptop met hand" title="CV Afbeelding 1" class="cv-style floatright">
+        <img src="./images/cv_afbeelding1.jpg" alt="Afbeelding laptop met hand" title="CV Afbeelding 1" class="cv floatright">
 
         <!--Opleidingen-->
         
         <div class="row">
-            <h1 class="cv-style"><i class="fa-solid fa-graduation-cap cv-icon"></i>&nbsp;Opleidingen</h1>
+            <h1 class="cv"><i class="fa-solid fa-graduation-cap cv-icon"></i>&nbsp;Opleidingen</h1>
         </div>
 
-        <img src="./images/cv_afbeelding2.jpg" alt="Afbeelding studieboek met post-its" title="CV Afbeelding 2" class="cv-style floatleft">
-        <table class="cv-table floatright">
+        <img src="./images/cv_afbeelding2.jpg" alt="Afbeelding studieboek met post-its" title="CV Afbeelding 2" class="cv floatleft">
+        <table class="cv floatright">
             <tr>
-                <td rowspan="2" class="left">2023 - ...</td>
-                <td class="right">Graduaat in het Programmeren</td>
+                <td rowspan="2" class="cv-left">2023 - ...</td>
+                <td class="cv-right">Graduaat in het Programmeren</td>
             </tr>
             <tr>
-                <td class="italic">
+                <td class="cv-italic">
                     <a href="https://thomasmore.be/" target="_blank">Thomas More (Lier)</a>
                 </td>
             </tr>
 
             <tr>
-                <td rowspan="2" class="left">2010 - 2012</td>
-                <td class="right">Master na Master in het Fiscaal Recht</td>
+                <td rowspan="2" class="cv-left">2010 - 2012</td>
+                <td class="cv-right">Master na Master in het Fiscaal Recht</td>
             </tr>
             <tr>
-                <td class="italic">
+                <td class="cv-italic">
                     <a href="https://www.uantwerpen.be/nl/" target="_blank">Universiteit Antwerpen</a>
                 </td>
             </tr>
 
             <tr>
-                <td rowspan="2" class="left">2006 - 2010</td>
-                <td class="right">Master in de Handelswetenschappen: Accountancy en fiscaliteit</td>
+                <td rowspan="2" class="cv-left">2006 - 2010</td>
+                <td class="cv-right">Master in de Handelswetenschappen: Accountancy en fiscaliteit</td>
             </tr>
             <tr>
-                <td class="italic">
+                <td class="cv-italic">
                     <a href="https://thomasmore.be/" target="_blank">Lessius Hogeschool Antwerpen (Associatie K.U. Leuven)</a>
                 </td>
             </tr>
@@ -214,34 +217,34 @@
 
         <!--Certificering-->   
         <div class="row">
-            <h1 class="cv-style"><i class="fa-solid fa-certificate cv-icon"></i>&nbsp;Certificering</h1>
+            <h1 class="cv"><i class="fa-solid fa-certificate cv-icon"></i>&nbsp;Certificering</h1>
         </div>
 
-        <table class="cv-table floatleft">
+        <table class="cv floatleft">
             <col class="col-left">
             <tr>
-                <td rowspan="2" class="left">Sinds 2017</td>
-                <td class="right">Gecertificeerd fiscaal accountant</td>
+                <td rowspan="2" class="cv-left">Sinds 2017</td>
+                <td class="cv-right">Gecertificeerd fiscaal accountant</td>
             </tr>
 
             <tr>
-                <td class="italic">
+                <td class="cv-italic">
                     <a href="https://www.itaa.be/nl/home/" target="_blank">Institute for Tax Advisors and Accountants (ITAA)</a>
                 </td>
             </tr>
         </table>
         
-        <img src="./images/cv_afbeelding3.jpg" alt="Dame die boekhouding schriftelijk aanvult met behulp van balpen en rekenmachine" Title="CV Afbeelding 3" class="cv-style floatright">
+        <img src="./images/cv_afbeelding3.jpg" alt="Dame die boekhouding schriftelijk aanvult met behulp van balpen en rekenmachine" Title="CV Afbeelding 3" class="cv floatright">
     
 
         <!--Vaardigheden en getuigschriften-->   
         <div class="row">
-            <h1 class="cv-style"><i class="fa-solid fa-trophy cv-icon"></i>&nbsp;Vaardigheden &amp; getuigschriften</h1>
+            <h1 class="cv"><i class="fa-solid fa-trophy cv-icon"></i>&nbsp;Vaardigheden &amp; getuigschriften</h1>
         </div>
 
-        <img src="./images/cv_afbeelding4.jpg" alt="" title="CV Afbeelding 4" class="cv-style floatleft">
+        <img src="./images/cv_afbeelding4.jpg" alt="" title="CV Afbeelding 4" class="cv floatleft">
         
-        <ul class="ul-full">
+        <ul class="cv">
             <li><strong>Vaardigheden</strong>
             <ul>
                 <li>Noties van programmeertalen: VBA Excel, Python</li>
@@ -258,7 +261,7 @@
             </li>
         </ul>
 
-        <footer>&copy; Copyright</footer>
+        <footer>&copy;&nbsp;Copyright</footer>
     </div>
 
 </body>

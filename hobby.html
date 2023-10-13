@@ -21,24 +21,24 @@
             color:#141E46;            
         }
         
-        figure {
+        figure.hobby-portret {
             margin-left: 0;
             margin-top: 0px;
         }
 
-        .img-portret {
+        img.hobby-portret {
             width: 350px;
             margin-left: 20px;
             margin-top: 0px;
         }
 
-        figcaption {
+        figcaption.hobby-portret {
             color:#141E46;
             text-align: center;
             font-size: x-small;
         }
 
-        h1.hobby-style {
+        h1.hobby {
             color: #EB5350;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
@@ -47,10 +47,11 @@
             margin: 0px 20px 20px 0px;
         }
 
+        /*Algemeen*/
         .floatleft {
             float: left;
         }
-
+        /*Algemeen*/
         .floatright {
             float: right;
             display:flex;
@@ -94,7 +95,7 @@
             border-bottom: none;
         }
         
-        q {
+        q.hobby {
             font-style: italic;
         }
 
@@ -103,19 +104,19 @@
 
 <body>
     <div class="container">
-        <ul class="ul-nav">
-            <li class="li-nav"><a href="index.html"><i class="fa-solid fa-house index-icon"></i>&nbsp;&nbsp;Home</a></li>
-            <li class="li-nav"><a href="cv.html">Curriculum Vitae</a></li>
-            <li class="li-nav"><a href="ervaring.html">Ervaring</a></li>
-            <li class="li-nav"><a href="hobby.html" id="nav-hobby">Hobby</a></li>
-            <li class="li-nav"><a href="contact.html">Contact</a></li>
+        <ul class="nav">
+            <li class="nav"><a href="index.html"><i class="fa-solid fa-house home-icon"></i>&nbsp;&nbsp;Home</a></li>
+            <li class="nav"><a href="cv.html">Curriculum Vitae</a></li>
+            <li class="nav"><a href="ervaring.html">Ervaring</a></li>
+            <li class="nav"><a href="hobby.html" id="nav-hobby">Hobby</a></li>
+            <li class="nav"><a href="contact.html">Contact</a></li>
         </ul>
 
-        <h1 class="hobby-style">Hobby's en interesses</h1>
+        <h1 class="hobby">Hobby's en interesses</h1>
         <div class="floatleft">
-        <figure>
-            <img src="./images/hobby_portretfoto.jpg" alt="Foto van Els Van Rompaey met alt saxofoon" title="Foto van Els Van Rompaey met alt saxofoon" class="img-portret">
-            <figcaption>Foto door Hugo Gerstmans</figcaption>
+        <figure class="hobby-portret">
+            <img src="./images/hobby_portretfoto.jpg" alt="Foto van Els Van Rompaey met alt saxofoon" title="Foto van Els Van Rompaey met alt saxofoon" class="hobby-portret">
+            <figcaption class="hobby-portret">Foto door Hugo Gerstmans</figcaption>
         </figure>
         </div>
         <div class="floatright">
@@ -131,7 +132,7 @@
 
             <tr>
                 <th class="hobby">Sport &amp;<br> Gezondheid</th>
-                <td><q>Mens sana in corpore sano</q><br>
+                <td><q class="hobby">Mens sana in corpore sano</q><br>
                     Ik ben geen topsportster maar ik probeer deze quote toch enigszins te respecteren. Een sessie Bodypump of 
                     een rondje joggen zijn hierbij mijn favorieten. Een wandeling in de natuur kan ook wonderen doen!</td>
                 <td><img src="./images/hobby_afbeelding2.jpg" alt="" title=""></td>
@@ -159,7 +160,7 @@
 
         </table>
         </div>
-        <footer>&copy; Copyright</footer>
+        <footer>&copy;&nbsp;Copyright</footer>
     </div>
 </body>
 
