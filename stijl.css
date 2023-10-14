@@ -36,6 +36,11 @@ li.nav a:hover {
     color:#141E46;
 }
 
+li.nav a.active {
+    background-color:#EB5350;
+    color:#141E46;      
+}
+
 .home-icon {
     color:#EB5350;
 }
@@ -60,10 +65,10 @@ footer, div.row {
 }
 
 /*Homepage formatting*/
-#nav-index {
+/*#nav-index {
     background-color:#EB5350;
     color:#141E46;      
-}
+}*/
 
 h1.index {
     color: #EB5350;
@@ -109,11 +114,6 @@ p.index a:hover {
 }
 
 /*Webpage CV formatting*/
-#nav-cv {
-    background-color:#EB5350;
-    color:#141E46;            
-}
-
 h1.cv {
     background-color: #EB5350;
     color: #FFFFFF;
@@ -182,11 +182,6 @@ ul.cv li {
 }
 
 /*Webpage Ervaring formatting*/
-#nav-ervaring {
-    background-color:#EB5350;
-    color:#141E46;            
-}
-
 div.ervaring {
     margin-bottom: 70px;
 }
@@ -211,11 +206,6 @@ div.float-style p {
 }
 
 /*Webpage Hobby formatting*/
-#nav-hobby {
-    background-color:#EB5350;
-    color:#141E46;            
-}
-
 figure.hobby-portret {
     margin-left: 0;
     margin-top: 0px;
