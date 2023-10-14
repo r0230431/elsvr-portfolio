@@ -191,7 +191,11 @@ h1.ervaring {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8em;
     font-weight: bold;
-    margin: 0px 0px 30px 20px;
+    margin: 0px 0px 20px 20px;
+}
+
+.ervaring p {
+    text-align: justify;
 }
 
 div.float-style p {
@@ -230,7 +234,7 @@ table.hobby {
     border-collapse: collapse;
     /*border: 3px solid #141E46;*/
     margin-right: 20px;
-    width: 750px;
+    width: 800px;
 }
 
 table.hobby caption {

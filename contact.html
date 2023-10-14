@@ -16,6 +16,17 @@
     <link href="stijl.css" rel="stylesheet">
     <style>
         /*Webpage Contact formatting*/
+        div.contact {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .link-text {
+            padding: 15px;
+        }
+
         h1.contact {
             color: #EB5350;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,7 +45,6 @@
 
         div.contact a {
             font-weight: bold;
-            padding: 15px;
         }
 
         div.contact a:link {
@@ -46,20 +56,8 @@
             color:#EB5350;
         }
 
-        div.contact {
-            display: flex;
-            margin-left: 20px;
-            margin-bottom: 30px;
-            align-items: center;
-        }
-
         #linkedin-logo {
             width: 50px;
-        }
-
-        p.contact {
-            margin-left: 20px;
-            margin-bottom: 30px;
         }
 
         form.contact {
@@ -67,7 +65,6 @@
             border-radius: 5px;
             padding: 20px;
             margin: 20px;
-            width: 50%;
         }
 
         form.contact fieldset {
@@ -148,6 +145,28 @@
             left: 30%;
         }
 
+        .contact-mid {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .contact-left {
+            padding: 100px 50px 0px 20px;
+        }
+
+        .contact.right {
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+        }
+
+        .contact-image {
+            border-radius: 15px;
+        }
+
     </style>
 </head>
 
@@ -161,68 +180,77 @@
             <li class="nav"><a href="contact.html" class="active">Contact</a></li>
         </ul>
 
-        <h1 class="contact">Contact</h1>
-        <div class="contact">
-            <a href="https://be.linkedin.com/in/els-van-rompaey-5966aa17" target="_blank"><img src="images/linkedin_logo.png" alt="Logo LinkedIn" title="Logo LinkedIn" id="linkedin-logo"></a>
-            <a href="https://be.linkedin.com/in/els-van-rompaey-5966aa17" target="_blank">Bezoek mijn LinkedIn-profiel</a>
+        <div>
+            <h1 class="contact">Contact</h1>
+            <div class="contact">
+                <div>
+                    <a href="https://be.linkedin.com/in/els-van-rompaey-5966aa17" target="_blank"><img src="images/linkedin_logo.png" alt="Logo LinkedIn" title="Logo LinkedIn" id="linkedin-logo"></a>    
+                </div>
+                <div class="link-text">  
+                    <a href="https://be.linkedin.com/in/els-van-rompaey-5966aa17" target="_blank">Bezoek mijn LinkedIn-profiel</a>
+                </div>
+            </div>
         </div>
 
-        <h2 class="contact">Contactformulier</h2>
+        <div class="contact-mid">
+            <div class="contact-left">
+                <img src="./images/contact_afbeelding1.jpg" alt="Smartphone" titel="Contact afbeelding 1" class="contact-image">
+            </div>
 
-        <div class="block">
-            <form Method="post" action="https://tm-statweb.be/sendmail.php" class="contact padding">
-                <div class="personalia">
-                    <fieldset>
-                        <legend>Persoonlijke gegevens</legend>
-                        <input type="hidden" name="studentemail" value="r0230431@student.thomasmore.be">
-                        <div>
-                            <label for="voornaam">Voornaam:</label>
-                        </div>
-                        <div>
-                            <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
-                        </div>
-                        <div>
-                            <label for="familienaam">Familienaam:</label>
-                        </div>
-                        <div>
-                            <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam">
-                        </div>
-                        <div>
-                            <label for="email">E-mail:</label><br>
-                        </div>
-                        <div>
-                            <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
-                    </fieldset>
-                </div>
-                
-                <div>
-                <fieldset>
-                    <legend>Bericht</legend>         
+            <div class="contact-right">
+                <h2 class="contact">Contactformulier</h2>
+                <form Method="post" action="https://tm-statweb.be/sendmail.php" class="contact padding">
+                    <div class="personalia">
+                        <fieldset>
+                            <legend>Persoonlijke gegevens</legend>
+                            <input type="hidden" name="studentemail" value="r0230431@student.thomasmore.be">
+                            <div>
+                                <label for="voornaam">Voornaam:</label>
+                            </div>
+                            <div>
+                                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
+                            </div>
+                            <div>
+                                <label for="familienaam">Familienaam:</label>
+                            </div>
+                            <div>
+                                <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam">
+                            </div>
+                            <div>
+                                <label for="email">E-mail:</label><br>
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
+                        </fieldset>
+                    </div>
+                    
                     <div>
-                        <label for="onderwerp"> Onderwerp:
-                            <select id="onderwerp" name="onderwerp">
-                                <option value="informatie">Ik wens meer informatie</option>
-                                <option value="opmerking">Ik heb een opmerking</option>
-                                <option value="andere">Andere</option>
-                            </select>
-                        </label>
+                        <fieldset>
+                            <legend>Bericht</legend>         
+                            <div>
+                                <label for="onderwerp"> Onderwerp:
+                                    <select id="onderwerp" name="onderwerp">
+                                        <option value="informatie">Ik wens meer informatie</option>
+                                        <option value="opmerking">Ik heb een opmerking</option>
+                                        <option value="andere">Andere</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="bericht">Bericht:</label>
+                            </div>
+                            <div>
+                                <textarea id="bericht" name="bericht" rows="8" cols="75" placeholder="Typ hier uw bericht"></textarea>
+                            </div>
+                        </fieldset>
                     </div>
 
-                    <div>
-                        <label for="bericht">Bericht:</label>
-                    </div>
-                    <div>
-                        <textarea id="bericht" name="bericht" rows="8" cols="75" placeholder="Typ hier uw bericht"></textarea>
-                    </div>
-
-                    </fieldset>
-                    </div>
                     <div>
                         <input type="submit" value="Verzenden" id="verzenden" name="verzenden" class="button">
                     </div>
-            </form>
-        
-        <img src="./images/contact_afbeelding1.jpg" alt="Smartphone" titel="Contact afbeelding 1">
+                </form>
+            </div>
         </div>
         <footer>&copy;&nbsp;Copyright</footer>
     </div>
