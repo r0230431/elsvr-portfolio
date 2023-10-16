@@ -29,7 +29,7 @@
 
         <div>
             <h1 class="contact">Contact</h1>
-            <div class="contact">
+            <div class="contact-top">
                 <div>
                     <a href="https://be.linkedin.com/in/els-van-rompaey-5966aa17" target="_blank"><img src="images/linkedin_logo.png" alt="Logo LinkedIn" title="Logo LinkedIn" id="linkedin-logo"></a>    
                 </div>
@@ -41,50 +41,47 @@
 
         <div class="contact-mid">
             <div class="contact-left">
-                <img src="./images/contact_afbeelding1.jpg" alt="Smartphone" titel="Contact afbeelding 1" class="contact-image">
+                <img src="./images/contact_afbeelding1.jpg" alt="Smartphone" title="Contact afbeelding 1" class="contact-image">
             </div>
 
             <div class="contact-right">
                 <h2 class="contact">Contactformulier</h2>
                 <form Method="post" action="https://tm-statweb.be/sendmail.php" enctype="multipart/form-data" class="contact padding">
-                    <div class="personalia">
-                        <fieldset>
-                            <legend>Persoonlijke gegevens</legend>
-                            <input type="hidden" name="studentemail" value="r0230431@student.thomasmore.be">
-                            <div>
-                                <label for="voornaam">Voornaam:</label>
-                                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" maxlenght="50">
-                            </div>
-                            <div>
-                                <label for="familienaam">Familienaam:</label>
-                                <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" maxlenght="50">
-                            </div>
-                            <div>
-                                <label for="email">E-mail:</label><br>
-                                <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
-                            </div>
-                        </fieldset>
-                    </div>
-                    
-                    <div>
-                        <fieldset>
-                            <legend>Bericht</legend>         
-                            <div>
-                                <label for="onderwerp"> Onderwerp:
-                                    <select id="onderwerp" name="onderwerp">
-                                        <option value="informatie">Ik wens meer informatie</option>
-                                        <option value="opmerking">Ik heb een opmerking</option>
-                                        <option value="andere">Andere</option>
-                                    </select>
-                                </label>
-                            </div>
+                    <fieldset>
+                        <legend>Persoonlijke gegevens</legend>
+                        <input type="hidden" name="studentemail" value="r0230431@student.thomasmore.be">
+                        <div>
+                            <label for="voornaam">Voornaam:</label>
+                            <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" maxlength="50">
+                        </div>
+                        <div>
+                            <label for="familienaam">Familienaam:</label>
+                            <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" maxlength="50">
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
+                        </div>
+                    </fieldset>
+                     
+                    <fieldset>
+                        <legend>Bericht</legend>         
+                        <div>
+                            <label for="onderwerp"> Onderwerp:
+                                <select id="onderwerp" name="onderwerp">
+                                    <option value="informatie">Ik wens meer informatie</option>
+                                    <option value="opmerking">Ik heb een opmerking</option>
+                                    <option value="andere">Andere</option>
+                                </select>
+                            </label>
+                        </div>
 
-                            <div>
-                                <label for="bericht">Bericht:</label>
-                                <textarea id="bericht" name="bericht" rows="8" cols="75" placeholder="Typ hier uw bericht"></textarea>
-                            </div>
-                        </fieldset>
-                    </div>
+                        <div>
+                            <label for="bericht">Bericht:</label>
+                            <textarea id="bericht" name="bericht" rows="8" cols="75" placeholder="Typ hier uw bericht."></textarea>
+                        </div>
+                    </fieldset>
+
 
                     <div>
                         <label>
