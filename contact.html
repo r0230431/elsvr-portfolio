@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Els Van Rompaey">
     <title>Els Van Rompaey - Portofolio - Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,160 +15,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link href="stijl.css" rel="stylesheet">
-    <style>
-        /*Webpage Contact formatting*/
-        div.contact {
-            display: flex;
-            flex-direction: row;
-            margin-left: 20px;
-            margin-bottom: 30px;
-        }
-
-        .link-text {
-            padding: 15px;
-        }
-
-        h1.contact {
-            color: #EB5350;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: 2em;
-            margin: 0px 20px 30px 20px;
-        }
-
-        h2.contact {
-            color: #EB5350;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: 1.25em;
-            margin: 40px 20px 25px 20px
-        }
-
-        div.contact a {
-            font-weight: bold;
-        }
-
-        div.contact a:link {
-            text-decoration: none;
-            color:#141E46;
-        }
-
-        div.contact a:hover {
-            color:#EB5350;
-        }
-
-        #linkedin-logo {
-            width: 50px;
-        }
-
-        form.contact {
-            border: 1px solid #141E46;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        form.contact fieldset {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        form.padding div {
-            margin: 5px;
-        }
-
-        form.contact input {
-           width: 97%;
-           padding: 10px;
-           border-radius: 5px;
-        }
-
-        form.contact textarea {
-           width: 97%;
-           padding: 10px;
-           border-radius: 5px;
-        }
-
-        .personalia input {
-            margin-bottom: 10px;
-        }
-
-        form.contact legend {
-            font-weight: bold;
-            padding: 10px 0px;
-        }
-
-        form.contact input, form.contact textarea {
-            border:1px solid #141E46;
-            background-color: #DBDFEA;            
-        }
-
-        form.contact input:focus {
-            outline: none;
-            background-color: #FFFFFF;
-            border: 2px solid #EB5350;
-            border-radius: 5px;
-        }
-
-        form.contact textarea:focus {
-            outline: none;
-            background-color: #FFFFFF;
-            border: 2px solid #EB5350;
-            border-radius: 5px;
-        }
-
-        form.contact select:focus {
-            outline: none;
-            background-color: #FFFFFF;
-            border: 2px solid #EB5350;
-            border-radius: 5px;
-        }
-
-        form.contact select {
-            background-color: #DBDFEA;
-            color:#141E46;
-            padding: 5px;
-            margin: 5px 0px;
-        }
-
-        form.contact .button {
-            background-color: #EB5350;
-            border: 0.5px solid #141E46;
-            font-weight: bold;
-            font-size: 14pt;
-            color: #141E46;
-            border-radius: 5px;
-            padding: 10px;
-            align-items: center;
-            width: 40%;
-            position: relative;
-            left: 30%;
-        }
-
-        .contact-mid {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: flex-start;
-            margin-bottom: 30px;
-        }
-
-        .contact-left {
-            padding: 100px 50px 0px 20px;
-        }
-
-        .contact.right {
-            align-items: center;
-            justify-content: center;
-            vertical-align: middle;
-        }
-
-        .contact-image {
-            border-radius: 15px;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -199,28 +46,23 @@
 
             <div class="contact-right">
                 <h2 class="contact">Contactformulier</h2>
-                <form Method="post" action="https://tm-statweb.be/sendmail.php" class="contact padding">
+                <form Method="post" action="https://tm-statweb.be/sendmail.php" enctype="multipart/form-data" class="contact padding">
                     <div class="personalia">
                         <fieldset>
                             <legend>Persoonlijke gegevens</legend>
                             <input type="hidden" name="studentemail" value="r0230431@student.thomasmore.be">
                             <div>
                                 <label for="voornaam">Voornaam:</label>
-                            </div>
-                            <div>
-                                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
+                                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" maxlenght="50">
                             </div>
                             <div>
                                 <label for="familienaam">Familienaam:</label>
-                            </div>
-                            <div>
-                                <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam">
+                                <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" maxlenght="50">
                             </div>
                             <div>
                                 <label for="email">E-mail:</label><br>
-                            </div>
-                            <div>
                                 <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
+                            </div>
                         </fieldset>
                     </div>
                     
@@ -239,15 +81,15 @@
 
                             <div>
                                 <label for="bericht">Bericht:</label>
-                            </div>
-                            <div>
                                 <textarea id="bericht" name="bericht" rows="8" cols="75" placeholder="Typ hier uw bericht"></textarea>
                             </div>
                         </fieldset>
                     </div>
 
                     <div>
-                        <input type="submit" value="Verzenden" id="verzenden" name="verzenden" class="button">
+                        <label>
+                            <input type="submit" value="verzenden" id="verzenden" name="verzenden" class="button">
+                        </label>
                     </div>
                 </form>
             </div>
