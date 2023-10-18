@@ -346,18 +346,8 @@ form.contact input, form.contact textarea {
     border-radius: 5px;
 }
 
-form.contact input:focus {
-    outline: none;
-    background-color: #FFFFFF;
-    border: 2px solid #EB5350;
-    border-radius: 5px;
-}
-
-form.contact textarea:focus {
-    outline: none;
-    background-color: #FFFFFF;
-    border: 2px solid #EB5350;
-    border-radius: 5px;
+::placeholder {
+    color: grey;
 }
 
 form.contact select {
@@ -386,6 +376,20 @@ form.contact .button {
     width: 40%;
     position: relative;
     left: 30%;
+}
+
+form.contact input:focus {
+    outline: none;
+    background-color: #FFFFFF;
+    border: 2px solid #EB5350;
+    border-radius: 5px;
+}
+
+form.contact textarea:focus {
+    outline: none;
+    background-color: #FFFFFF;
+    border: 2px solid #EB5350;
+    border-radius: 5px;
 }
 
 .contact-mid {
